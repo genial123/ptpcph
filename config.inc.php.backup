@@ -1,0 +1,67 @@
+<?php
+/**
+ *
+ * @package PTPCPH
+ * @version 0.1
+ * @author genial
+ * @copyright Copyright (c) 2013 genial
+ *
+ */
+
+$config = array(
+	/*
+	 * CouchPotato settings
+	 */
+	'cp' => array(
+		'url' => 'http://my-cp-ip-here/couchpotato/api',
+		'apikey' => ''
+	),
+
+	/*
+	 * PTP settings
+	 */
+	'ptp' => array(
+		'username' => '',
+		'password' => '',
+		'passkey' => ''
+	),
+
+	/*
+	 * Maximum amount of re-adds per movie title
+	 * 0 is unlimited
+	 */
+	'max_readds' => 1,
+
+	/*
+	 * Maximum age of snatch before leaving it alone
+	 */
+	'max_age' => 86400,
+
+	/*
+	 * How often to run the check (in minutes)
+	 * 0 will result in a single run only
+	 */
+	'run_every' => 0,
+
+	/*
+	 * Test run - only echo what was supposed to happen, but don't do it
+	 */
+	'test_run' => true,
+
+	/*
+	 * cURL options - should be fine as is
+	 */
+	'curl' => array(
+		'connect_timeout' => 5,
+		'timeout' => 15,
+		'ignore_invalid_ssl' => false
+	),
+
+	/*
+	 * Directories
+	 */
+	'data_dir' => 'data',
+	'log_dir' => 'logs'
+);
+
+?>
